@@ -29,16 +29,16 @@ BROWSER = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
 # (crawler, operator, what it is used for). The October 2026 study used the first ten.
 CRAWLERS = [
     ('OAI-SearchBot', 'OpenAI', 'ChatGPT search'),
-    ('ChatGPT-User', 'OpenAI', 'opens pages for a ChatGPT user'),
+    ('ChatGPT-User', 'OpenAI', 'opens pages for a ChatGPT user; OpenAI: robots.txt may not apply'),
     ('GPTBot', 'OpenAI', 'model training'),
     ('PerplexityBot', 'Perplexity', 'Perplexity search'),
     ('ClaudeBot', 'Anthropic', 'model training'),
     ('bingbot', 'Microsoft', 'Bing search and Copilot'),
     ('Googlebot', 'Google', 'Google Search, AI Overviews, AI Mode'),
-    ('Perplexity-User', 'Perplexity', 'opens pages for a Perplexity user'),
+    ('Perplexity-User', 'Perplexity', 'opens pages for a Perplexity user; Perplexity: generally ignores robots.txt'),
     ('Claude-SearchBot', 'Anthropic', 'Claude search'),
     ('Claude-User', 'Anthropic', 'opens pages for a Claude user'),
-    ('Google-Extended', 'Google', 'Gemini training (does not affect Search)'),
+    ('Google-Extended', 'Google', 'Gemini training and grounding in Gemini Apps, not Google Search'),
 ]
 
 ORG_TYPES = {'Organization', 'LocalBusiness', 'RealEstateAgent', 'Person', 'ProfessionalService',

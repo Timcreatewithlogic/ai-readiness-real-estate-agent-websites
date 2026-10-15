@@ -63,6 +63,8 @@ The script loads the address once without JavaScript, says whether a firewall tu
 
 Or by hand: open your site with JavaScript switched off in the browser settings and see how much text is left, then open `yourdomain.com/robots.txt` and look for `Disallow: /` under `User-agent: *` or under OAI-SearchBot, ChatGPT-User, PerplexityBot or Claude-SearchBot.
 
+Without installing anything: paste your robots.txt into the free [AI crawler checker](https://createwithlogic.com/ai-crawler-checker). It reads the file the same way, in your browser, and shows the line that decides for each crawler.
+
 ## Free webinar, October 22, 2026
 
 Free live webinar on Thursday, October 22, 2026, 12:00 PM ET, for US real estate agents and teams, accountants, CPA and tax firms: how ChatGPT and other AI search tools decide which agents and firms to recommend, and how to get found there. Every registered agent gets this check and an AI answer check before the session.
