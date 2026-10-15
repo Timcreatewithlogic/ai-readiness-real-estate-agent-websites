@@ -1,0 +1,11 @@
+crawler,operator,purpose,sites_blocking,sites_checked,share_blocking
+OAI-SearchBot,OpenAI,ChatGPT search,3,163,1.8%
+ChatGPT-User,OpenAI,opens pages for a ChatGPT user,4,163,2.5%
+GPTBot,OpenAI,model training,10,163,6.1%
+PerplexityBot,Perplexity,Perplexity search,4,163,2.5%
+ClaudeBot,Anthropic,model training,6,163,3.7%
+bingbot,Microsoft,Bing search and Copilot,2,163,1.2%
+Googlebot,Google,Google Search incl. AI Overviews and AI Mode,2,163,1.2%
+Perplexity-User,Perplexity,opens pages for a Perplexity user,3,163,1.8%
+Claude-SearchBot,Anthropic,Claude search,3,163,1.8%
+Claude-User,Anthropic,opens pages for a Claude user,3,163,1.8%

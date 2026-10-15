@@ -1,0 +1,8 @@
+outcome,sites,base
+answered with a page (HTTP 200),163,189 checked real estate agent websites
+"of which answered only on a second request one site at a time (first answer HTTP 429, too many requests)",4,189 checked real estate agent websites
+browser check page from Cloudflare (HTTP 403 or 429),16,189 checked real estate agent websites
+browser check page from Vercel (HTTP 429),3,189 checked real estate agent websites
+refused without a check page (HTTP 403),4,189 checked real estate agent websites
+no answer,3,189 checked real estate agent websites
+not counted: one platform answered with a notice page (HTTP 218) on both requests,8,197 sites in the sample
