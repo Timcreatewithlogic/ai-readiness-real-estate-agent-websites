@@ -42,7 +42,7 @@ CRAWLERS = [
 ]
 
 ORG_TYPES = {'Organization', 'LocalBusiness', 'RealEstateAgent', 'Person', 'ProfessionalService',
-             'AccountingService', 'FinancialService', 'LegalService', 'Corporation'}
+             'AccountingService', 'FinancialService', 'LegalService', 'Corporation', 'RealEstateOrganization'}
 
 CHECK_PAGE = re.compile(r'Just a moment\.\.\.|Checking your browser|Vercel Security Checkpoint|'
                         r'Verify you are human|cf-chl|px-captcha', re.I)
@@ -73,8 +73,13 @@ def words_without_js(html):
 
 
 def jsonld_types(html):
-    blocks = re.findall(r'(?is)<script[^>]+ld\+json[^>]*>(.*?)</script>', html)
-    return sorted(set(re.findall(r'"@type"\s*:\s*"([A-Za-z]+)"', ' '.join(blocks))))
+    blocks = ' '.join(re.findall(r'(?is)<script[^>]+ld\+json[^>]*>(.*?)</script>', html))
+    types = set(re.findall(r'"@type"\s*:\s*"([A-Za-z]+)"', blocks))
+    # "@type" can also be a list, such as "@type": ["AccountingService", "LocalBusiness"].
+    # Our first count missed these lists; corrected on October 15, 2026 (see README).
+    for group in re.findall(r'"@type"\s*:\s*\[([^\]]*)\]', blocks):
+        types.update(re.findall(r'"([A-Za-z]+)"', group))
+    return sorted(types)
 
 
 def blocked_by_robots(robots, url):

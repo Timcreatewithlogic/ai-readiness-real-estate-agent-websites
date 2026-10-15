@@ -27,10 +27,12 @@ Every site that showed no page the first time was asked again about 20 minutes l
 | Sites that block GPTBot (OpenAI training) | 10 of 163 (6.1%) |
 | Home page with fewer than 50 words without JavaScript | 16 of 163 (9.8%) |
 | Text only appears with JavaScript | 6 of 163 (3.7%) |
-| No structured data naming the agent or firm | 80 of 163 (49%) |
-| Structured data of type RealEstateAgent | 34 of 163 (21%) |
+| No structured data naming the agent or firm | 76 of 163 (47%), corrected October 15, 2026 |
+| Structured data of type RealEstateAgent | 46 of 163 (28%), corrected October 15, 2026 |
 
 Files: [`data/reachability.csv`](data/reachability.csv) · [`data/robots_txt_blocks_by_crawler.csv`](data/robots_txt_blocks_by_crawler.csv) · [`data/near_empty_home_pages.csv`](data/near_empty_home_pages.csv) · [`data/summary.csv`](data/summary.csv)
+
+**Correction, October 15, 2026.** Our first count read the JSON-LD `@type` only when it was a single string, as in `"@type": "RealEstateAgent"`, and checked only the first ten types of a page in alphabetical order, so on pages with many types it missed RealEstateAgent. It also missed types written as a list, such as `"@type": ["RealEstateAgent", "Person"]`. On October 15 we loaded the affected sites again, one request per site: 4 of the 80 sites counted without such markup name the agent or firm, and 12 more sites use RealEstateAgent, 3 of them among those 4. Every type we had stored for these sites was still there. Sites we could not load again stay as first counted, and one site whose markup had changed since is not counted. Corrected results: 76 of 163 (47%) without structured data naming the agent or firm instead of 80 (49%), and 46 of 163 (28%) with RealEstateAgent instead of 34 (21%). `scan/check_site.py` reads both forms since then.
 
 **Robots.txt is rarely the problem.** 3 of the 163 sites that answered with a page block OAI-SearchBot, the crawler OpenAI documents for surfacing websites in ChatGPT search. Two of them are not live websites (a "coming soon" page and an error page) and block every crawler. One live site blocks ChatGPT's crawlers by name.
 

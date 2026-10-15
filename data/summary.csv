@@ -5,8 +5,8 @@ Sites that block PerplexityBot (Perplexity search),4,163 real estate agent websi
 Sites that block GPTBot (OpenAI training),10,163 real estate agent websites that answered with a page
 Home page with fewer than 50 words without JavaScript,16,163 real estate agent websites that answered with a page
 Home page whose text only appears with JavaScript,6,163 real estate agent websites that answered with a page
-No structured data naming the agent or firm,80,163 real estate agent websites that answered with a page
-Structured data of type RealEstateAgent,34,163 real estate agent websites that answered with a page
+No structured data naming the agent or firm,76,163 real estate agent websites that answered with a page
+Structured data of type RealEstateAgent,46,163 real estate agent websites that answered with a page
 Median Google reviews across the sample,81.0,197 real estate agents from Google Maps
 "Agent AI Overviews citing an agent, team or brokerage website",14,"15 Google AI Overviews with sources (October 13, 2026)"
 Median reviews of agents named by Google AI,1136,"5 agents named with rating and review count (October 13, 2026)"
