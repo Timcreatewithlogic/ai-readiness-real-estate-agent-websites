@@ -1,6 +1,6 @@
 """Check how AI and search crawlers see a website.
 
-Loads the page once without running JavaScript (as AI crawlers do), reports whether a firewall
+Loads the page once without running JavaScript (the way crawlers first fetch it), reports whether a firewall
 turned the request away, counts the visible words, lists the JSON-LD types and reads robots.txt
 for the AI and search crawlers. Two GET requests per site, nothing else.
 
@@ -99,8 +99,8 @@ def check(site):
     if status is None:
         print(f'  No answer ({html}). Check that the site is live and the address in your listings is right.')
     elif status != 200 or (CHECK_PAGE.search(html[:50_000]) and words_without_js(html) < 50):
-        print('  The request was turned away or got a check page instead of the site. AI crawlers do not run '
-              'JavaScript, so they only get through if your firewall lets them. Ask whoever runs it whether '
+        print('  The request was turned away or got a check page instead of the site. Crawlers fetch the page '
+              'without running JavaScript first, so they only get through if your firewall lets them. Ask whoever runs it whether '
               'OAI-SearchBot, ChatGPT-User, PerplexityBot, Perplexity-User, Claude-SearchBot and Claude-User pass.')
     if rb_status == 200:
         for name, operator, purpose in CRAWLERS:
