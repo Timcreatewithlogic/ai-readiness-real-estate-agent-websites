@@ -65,12 +65,14 @@ Or by hand: open your site with JavaScript switched off in the browser settings 
 
 Without installing anything: paste your robots.txt into the free [AI crawler checker](https://createwithlogic.com/ai-crawler-checker). It reads the file the same way, in your browser, and shows the line that decides for each crawler.
 
+For the rest of the picture, what ChatGPT, Gemini and Perplexity answer for your city and what your Google profile shows, there is a free [AI visibility check](https://createwithlogic.com/free-ai-visibility-check) by email.
+
 ## Free webinar, October 22, 2026
 
 Free live webinar on Thursday, October 22, 2026, 12:00 PM ET, for US real estate agents and teams, accountants, CPA and tax firms: how ChatGPT and other AI search tools decide which agents and firms to recommend, and how to get found there. Every registered agent gets this check and an AI answer check before the session.
 Details and registration: **https://createwithlogic.com/ai-visibility-webinar**
 
-More: [AI visibility for real estate agents](https://createwithlogic.com/ai-visibility-for-real-estate-agents) · [How to get your business recommended by ChatGPT: the 2026 data](https://createwithlogic.com/how-to-get-recommended-by-chatgpt)
+More: [AI visibility for real estate agents](https://createwithlogic.com/ai-visibility-for-real-estate-agents) · [How to get your business recommended by ChatGPT: the 2026 data](https://createwithlogic.com/how-to-get-recommended-by-chatgpt) · [GEO for real estate agents, explained with data](https://createwithlogic.com/geo-for-real-estate-agents) · [The AI visibility audit for real estate agents](https://createwithlogic.com/ai-visibility-audit)
 
 ## Sources
 
