@@ -74,7 +74,7 @@ For the rest of the picture, what ChatGPT, Gemini and Perplexity answer for your
 Free live webinar on Thursday, October 22, 2026, 12:00 PM ET, for US real estate agents and teams, accountants, CPA and tax firms: how ChatGPT and other AI search tools decide which agents and firms to recommend, and how to get found there. Every registered agent gets this check and an AI answer check before the session.
 Details and registration: **https://createwithlogic.com/ai-visibility-webinar**
 
-More: [AI visibility for real estate agents](https://createwithlogic.com/ai-visibility-for-real-estate-agents) · [How to get your business recommended by ChatGPT: the 2026 data](https://createwithlogic.com/how-to-get-recommended-by-chatgpt) · [GEO for real estate agents, explained with data](https://createwithlogic.com/geo-for-real-estate-agents) · [The AI visibility audit for real estate agents](https://createwithlogic.com/ai-visibility-audit)
+More: [AI visibility for real estate agents](https://createwithlogic.com/ai-visibility-for-real-estate-agents) · [How to get your business recommended by ChatGPT: the 2026 data](https://createwithlogic.com/how-to-get-recommended-by-chatgpt) · [GEO for real estate agents, explained with data](https://createwithlogic.com/geo-for-real-estate-agents) · [The AI visibility audit for real estate agents](https://createwithlogic.com/ai-visibility-audit-for-real-estate-agents) · [A sample audit report](https://createwithlogic.com/ai-visibility-audit-sample-report)
 
 ## Sources
 
